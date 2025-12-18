@@ -1,0 +1,114 @@
+/* Layout */
+.dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #1f2937;
+  color: #fff;
+  padding: 25px 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #d1d5db;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #374151;
+  color: #fff;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* Form Card */
+.form-card {
+  background: #ffffff;
+  padding: 35px;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.form-card h2 {
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+/* Inputs */
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-card textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+  border-color: #2563eb;
+}
+
+/* Errors */
+.error {
+  font-size: 13px;
+  color: #dc2626;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.form-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.form-card button:hover:enabled {
+  background-color: #1e40af;
+  transform: translateY(-1px);
+}
+
+.form-card button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}

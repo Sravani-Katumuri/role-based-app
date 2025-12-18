@@ -1,0 +1,36 @@
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <h3 class="logo">MyApp</h3>
+    <nav>
+      <a class="active">Dashboard</a>
+      <a href="#" style="color:antiquewhite">Profile</a>
+      <a href="#" style="color:antiquewhite">Settings</a>
+      <a href="#" style="color:antiquewhite">Logout</a>
+    </nav>
+  </aside>
+<main class="content">
+    <div class="form-card">
+<h2>Submit Data</h2>
+      <form (ngSubmit)="submitForm()" [formGroup]="form">
+        <input formControlName="name" placeholder="Name" />
+        <div class="error" *ngIf="form.get('name')?.touched && form.get('name')?.invalid">
+          Name is required (min 3 characters).
+        </div>
+
+        <input formControlName="email" placeholder="Email" />
+        <div class="error" *ngIf="form.get('email')?.touched && form.get('email')?.invalid">
+          Enter a valid email.
+        </div>
+
+        <textarea formControlName="message" placeholder="Message (optional)"></textarea>
+        <div class="error" *ngIf="form.get('message')?.touched && form.get('message')?.invalid">
+          Max 200 characters allowed.
+        </div>
+
+        <button type="submit" [disabled]="form.invalid">Submit</button>
+      </form>
+      </div>
+    </main>
+</div>
+

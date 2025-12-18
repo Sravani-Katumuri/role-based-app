@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "john",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+  "formData": [
+    {
+      "id": "369c",
+      "name": "sravai",
+      "city": "eluru"
+    },
+    {
+      "id": "c6ac",
+      "name": "Sravani",
+      "city": "Hyderabad"
+    },
+    {
+      "id": "9cbf",
+      "name": "sravani",
+      "email": "Sravani@gmail.com",
+      "message": ""
+    },
+    {
+      "id": "9db8",
+      "name": "sravani1",
+      "email": "sravani@gmail.com",
+      "message": "hi sravani"
+    },
+    {
+      "id": "042a",
+      "name": "sravani",
+      "email": "sravni@gmail.com",
+      "message": ""
+    },
+    {
+      "id": "6be0",
+      "name": "srav",
+      "email": "sra@gmail.com",
+      "message": ""
+    },
+    {
+      "id": "851f",
+      "name": "sravani",
+      "email": "sra@gmail.com",
+      "message": ""
+    },
+    {
+      "id": "b02f",
+      "name": "sravani",
+      "email": "srav@gmail.com",
+      "message": "ghggdsjd"
+    },
+    {
+      "id": "3a5d",
+      "name": "sravani",
+      "email": "srav@gmail.com",
+      "message": ""
+    },
+    {
+      "id": "6a6b",
+      "name": "sravani",
+      "email": "srava@gmail.com",
+      "message": "sraca"
+    }
+  ]
+}
